@@ -5,36 +5,36 @@ class Moonstone < Formula
   
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/moonstone-sh/moonstone/releases/download/v0.3.20/moon-aarch64-macos.tar.gz"
-    sha256 "3a697c92f8b67639193bb034650c882bb96ad8b5b9bf1f382d78be5bc1ad5b10"
+    sha256 "f3b0ba14e32cddf8ecbddfddf3fff8be773cfa23a81ce10d4530bff4a91d2f05"
   end
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/moonstone-sh/moonstone/releases/download/v0.3.20/moon-x86_64-macos.tar.gz"
-    sha256 "c654df9b84f822b1d59bff1a3c15fef1be321d66d7409fa29ab3c63af2cfd91d"
+    sha256 "586bb208ef10ff3d66b47bf499940033ddb43deda2e34cbbb7c1bad8beada113"
   end
 
   if OS.linux? && Hardware::CPU.arm?
     url "https://github.com/moonstone-sh/moonstone/releases/download/v0.3.20/moon-aarch64-linux.tar.gz"
-    sha256 "7410c8382ded7eac5d7eff0f6a41b218bcf1136722cfe7fbcda4e64eb5a23202"
+    sha256 "2ebd21dbc68921b07da273e90d73ea1cf73f313d67fc66a3a6a2ee90147175d6"
   end
 
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/moonstone-sh/moonstone/releases/download/v0.3.20/moon-x86_64-linux.tar.gz"
-    sha256 "ce7ecd81b711a5501dba73d14b989c2d89fe95d7aa64c50f17b60cc9330a8c39"
+    sha256 "eb18fed67f5f41d51ce2bf4afe2be8a7bce33d38c786eb041447f6f4f032a5f8"
   end
 
   if OS.linux? && Hardware::CPU.riscv64?
     url "https://github.com/moonstone-sh/moonstone/releases/download/v0.3.20/moon-riscv64-linux.tar.gz"
-    sha256 "847ae217e98cdc9e426b5706f330f7b26d28627a830572110e0cb2b82022d228"
+    sha256 "3a378ced864ac8c77e950ac14e2e11ecd9aaa1b272664a4afdf2cb7e5bc9ec57"
   end
 
   if OS.respond_to?(:freebsd?) && OS.freebsd?
     if Hardware::CPU.arm?
       url "https://github.com/moonstone-sh/moonstone/releases/download/v0.3.20/moon-aarch64-freebsd.tar.gz"
-      sha256 "435b655f8de97db3fedbea6e4e3968846e95d7dd471f1b32de8dcc4d8cf19b54"
+      sha256 "2dae4bc8adc752d40e7bf9c965046120079cff0a0ce6d51f664520c60cecf892"
     else
       url "https://github.com/moonstone-sh/moonstone/releases/download/v0.3.20/moon-x86_64-freebsd.tar.gz"
-      sha256 "f37712f2ed6c70ec69565ba32c50200991fa61c238ea9a42fd8d1a0cfb98c65e"
+      sha256 "a6efac832bcd0dbb421ecd0677d2fe9cf011c0348d93d9400252c62dfbdad76a"
     end
   end
 
