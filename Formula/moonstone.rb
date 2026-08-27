@@ -1,40 +1,40 @@
 class Moonstone < Formula
   desc "Reliable Lua environments, ready at a snap"
   homepage "https://moonstone.sh"
-  version "0.4.3"
+  version "0.4.4"
   
   if OS.mac? && Hardware::CPU.arm?
-      url "https://github.com/moonstone-sh/moonstone/releases/download/v0.4.3/moon-v0.4.3-aarch64-macos.tar.gz"
-    sha256 "4357ab809813b0ddb26ed33cc02c39daa02080bbcb7c717bf2bc9eb627f5dbe4"
+      url "https://github.com/moonstone-sh/moonstone/releases/download/v0.4.4/moon-v0.4.4-aarch64-macos.tar.gz"
+    sha256 "8463f9d84870980b373e01d1492cd1d52631bb510bae42204c32446e191945a5"
   end
 
   if OS.mac? && Hardware::CPU.intel?
-      url "https://github.com/moonstone-sh/moonstone/releases/download/v0.4.3/moon-v0.4.3-x86_64-macos.tar.gz"
-    sha256 "d885470b4a471e80e85b27166e9d61045e3153e3f5061a0536f19f9e4a5ad3b1"
+      url "https://github.com/moonstone-sh/moonstone/releases/download/v0.4.4/moon-v0.4.4-x86_64-macos.tar.gz"
+    sha256 "cb01d39bb3ff4dd6d3da3fd548df72f92ccc76b89168f654ed7f41cb1530e1b8"
   end
 
   if OS.linux? && Hardware::CPU.arm?
-      url "https://github.com/moonstone-sh/moonstone/releases/download/v0.4.3/moon-v0.4.3-aarch64-linux-gnu.tar.gz"
-    sha256 "8e8418d3d84314e3225ee56b31cc777887b5938af510071ce2d018b664f5910b"
+      url "https://github.com/moonstone-sh/moonstone/releases/download/v0.4.4/moon-v0.4.4-aarch64-linux-gnu.tar.gz"
+    sha256 "9e5229105a00b6d875675f70a4cf624aa1f298efa8ededf854a9ce339dd23d81"
   end
 
   if OS.linux? && Hardware::CPU.intel?
-      url "https://github.com/moonstone-sh/moonstone/releases/download/v0.4.3/moon-v0.4.3-x86_64-linux-gnu.tar.gz"
-    sha256 "d541b899d8b34aa8cb63f813a5e3e59a5753cdf1426e77f61a23c11418009d4f"
+      url "https://github.com/moonstone-sh/moonstone/releases/download/v0.4.4/moon-v0.4.4-x86_64-linux-gnu.tar.gz"
+    sha256 "834cb6b7f7eb375ab71c69b11415f6a992a8818bd69af8641c4040286d0ec952"
   end
 
   if OS.linux? && Hardware::CPU.riscv64?
-      url "https://github.com/moonstone-sh/moonstone/releases/download/v0.4.3/moon-v0.4.3-riscv64-linux-gnu.tar.gz"
-    sha256 "3886af94f5f323c86708ee074bfa12a8aa491fbee0eb1de88c62eb3f0b4f3988"
+      url "https://github.com/moonstone-sh/moonstone/releases/download/v0.4.4/moon-v0.4.4-riscv64-linux-gnu.tar.gz"
+    sha256 "5526c5602fad99fdf944b5cafcb4b20bb81c16543a666cdfbdee9efef2e9e1e4"
   end
 
   if OS.respond_to?(:freebsd?) && OS.freebsd?
     if Hardware::CPU.arm?
-      url "https://github.com/moonstone-sh/moonstone/releases/download/v0.4.3/moon-v0.4.3-aarch64-freebsd.tar.gz"
-      sha256 "6f83791cad896c01652c8e314472bb2982bf61f3068649b63bd39bad88f6c029"
+      url "https://github.com/moonstone-sh/moonstone/releases/download/v0.4.4/moon-v0.4.4-aarch64-freebsd.tar.gz"
+      sha256 "dea222eb8cf99aca3ce659331f2fcdf348cd391064981b6032fd814e736f3233"
     else
-      url "https://github.com/moonstone-sh/moonstone/releases/download/v0.4.3/moon-v0.4.3-x86_64-freebsd.tar.gz"
-      sha256 "31b229fef1cb97fb8754fdbd2aef699cb17ced50b073eacbdf5a3a7839a156c0"
+      url "https://github.com/moonstone-sh/moonstone/releases/download/v0.4.4/moon-v0.4.4-x86_64-freebsd.tar.gz"
+      sha256 "21224b03efd271b850536c7480b24d69ebfd3adc3a220c140c710d0cfc4e8ec9"
     end
   end
 
